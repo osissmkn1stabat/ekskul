@@ -218,6 +218,35 @@ img { max-width:100%; display:block; border-radius:8px; }
   animation: glow-red-text-shadow 1s infinite;
 }
 
+.Volley-Ball {
+  color: #ff48ea;
+  text-shadow: 
+  0 0 7px #ff48ea;
+  animation: glow-pink-text-shadow 1s infinite;
+}
+
+.PIK-R {
+  color: rgb(0, 200, 255);
+  text-shadow: 
+  0 0 7px rgb(0, 200, 255);
+  animation: glow-cyan-text-shadow 1s infinite;
+}
+
+.Badminton {
+  color: #00ff00;
+  text-shadow: 
+  0 0 7px #00ff00;
+  animation: glow-green-text-shadow 1s infinite;
+}
+
+.Catur {
+  color: #ffff66;
+  text-shadow: 
+  0 0 7px #ffff66;
+  animation: glow-yellow-text-shadow 1s infinite;
+}
+
+
 .section .text p {
   font-size:1.2rem;
   color:#ccc;
@@ -256,7 +285,7 @@ img { max-width:100%; display:block; border-radius:8px; }
 
 @keyframes glow-cyan-text-shadow {
   0% {
-    text-shadow: 0 0 20px rgb(0, 191, 255);
+    text-shadow: 0 0 20px rgb(0, 200, 255);
   }
   50% {
     text-shadow: 0 0 40px rgb(0, 200, 255);
@@ -361,6 +390,25 @@ img { max-width:100%; display:block; border-radius:8px; }
     box-shadow: 0 0 5px rgb(255, 51, 0)
   }
 }
+
+/* Semua elemen ini ter-hide dulu */
+.hero,
+.section,
+.site-footer {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Kelas yang memicu animasi */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.hidden { opacity: 0; transform: translateY(10px); }
+.fade-in { opacity: 1; transform: translateY(0); transition: opacity 0.6s, transform 0.6s; }
+
 
 /* ========== Footer ========== */
 .site-footer {
